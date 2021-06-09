@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SurveyForm</title>
+
+	<style type="text/css">
+		
+*{
+  margin: 0;
+  padding: 5px;
+  box-sizing:border-box;
+}
+input[type=text], select {
+  width: 30%;
+  padding: 8px 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+input[type=email], select {
+  width: 60.5%;
+  padding: 8px 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<label>Name<span style="font-size:50%;color:orange;">&bigstar;</span></label><br>
+			<input type="text" name="first" placeholder="First Name">
+      <input type="text" name="first" placeholder="Last Name" required >
+      <br>
+     <label class="input">Email<span style="font-size:50%;color:orange;">&bigstar;</span></label><br>
+			<input type="email" name="email" placeholder="Enter Email">
+      <br><br>
+      <p>Your Experience<span style="font-size:50%;color:orange;">&bigstar;</span></p>
+      <span style="font-size:200%;color:orange;">&bigstar;</span>
+      <span style="font-size:200%;color:orange;">&bigstar;</span>
+      <span style="font-size:200%;color:orange;">&bigstar;</span>
+      <span style="font-size:200%;color:orange;">&bigstar;</span>
+      <span style="font-size:200%;color:orange;">&bigstar;</span>
+      <br><br>
+      <p>Overall how would you experience with us?</p>
+      <br>
+      <h4>How satisfied are you with<span style="font-size:50%;color:orange;">&bigstar;</span></h4>
+      <br>
+      
+<table>
+  <tr>
+    <th></th>
+    <th>Very Unsatisfied</th>
+    <th>Unsatisfied</th>
+  </tr>
+  <tr>
+    <td>Purchase</td>
+    <td><input type="radio" id="male" name="choose1" value="Very Unsatisfied"></td>
+    <td><input type="radio" id="Unsatisfied" name="choose1" value="Unsatisfied"></td>
+  </tr>
+  <tr>
+    <td>Service</td>
+    <td><input type="radio" id="Unsatisfied" name="choose2" value="Very Unsatisfied"></td>
+    <td><input type="radio" id="Unsatisfied" name="choose2" value="Unsatisfied"></td>
+  </tr>
+  <tr>
+    <td>Company</td>
+    <td><input type="radio" id="Unsatisfied" name="choose3" value="Very Unsatisfied"></td>
+    <td><input type="radio" id="Unsatisfied" name="choose3" value="Unsatisfied"></td>
+  </tr>
+</table>
+      
+      <br>
+      <h4>How likely are you to</h4>
+           
+<table>
+  <tr>
+    <th></th>
+    <th>Very Likely</th>
+    <th>Unlikely</th>
+  </tr>
+  <tr>
+    <td>Buy from us again</td>
+    <td><input type="radio" id="Unlikely" name="choose4" value="Very likely"></td>
+   <td><input type="radio" id="Unlikely" name="choose4" value="Unlikely"></td>
+  </tr>
+  <tr>
+    <td>Recommend our product to others</td>
+    <td><input type="radio" id="Unlikely" name="choose5" value="Very Unlikely"></td>
+    <td><input type="radio" id="Unlikely" name="choose5" value="Unlikely"></td>
+  </tr>
+  <tr>
+    <td>Recommend our company to others</td>
+    <td><input type="radio" id="Unlikely" name="choose6" value="Very Unlikely"></td>
+    <td><input type="radio" id="Unlikely" name="choose6" value="Unlikely"></td>
+  </tr>
+</table>
+      
+      <br>
+      <h4>Additional comments or suggestions</h4>
+     <textarea rows="4" cols="160" name="comment" form="usrform">
+</textarea>
+      <br>
+  <button type="submit" form="form1" value="Submit">Submit</button>
+		</fieldset>
+	</form>
+</body>
+</html>
